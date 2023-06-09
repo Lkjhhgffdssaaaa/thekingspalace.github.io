@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+
+/* importants */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Arvo', serif !important;
+}
+
+p{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+a{
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* end of importants */
+
+/* webkit scrollbar */
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #1F1E1E;
+}
+/* end of webkit scrollbar */
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid#BAB9B9;
+    background: #fff;
+    padding:0 10px;
+    height: 87px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: top .5s;
+    z-index: 999;
+}
+
+.navbar ul{
+    display: flex;
+    margin-right: 70px;
+    align-items: center;
+    z-index: 9;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.navbar ul li a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #BAB9B9;
+    padding: 28px 0px;
+    transition: .3s all ease;
+}
+
+.navbar ul li.active{
+    display: flex;
+    z-index: 9;
+    flex-direction: column;
+
+}
+
+.navbar ul li.active::after{
+    content: "";
+    display: block;
+    margin: auto;
+    background-color: #1F1E1E;
+    height: 4px;
+    width: 33px;
+    border-radius: 100px 100px 0px 0px;
+
+}
+
+.navbar ul li a:hover{
+    color: #1F1E1E;
+}
+
+.navbar ul li a.active{
+    color: #1F1E1E;
+    margin-top: 3px;
+}
+
+.navbar .auth-btn,
+.mission .mission-2 .auth-btn,
+footer .content .auth-btn{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4200FF;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #ffff;
+    transition: .4s all ease;
+}
+
+.navbar .auth-btn:hover{
+    background-color: #e6e5e5;
+    color: #000;
+}
+
+/* end of navbar */
+
+/* homepage */
+.homepage{
+    margin-top: 110px;
+}
+
+.homepage,
+.event{
+    display: grid;
+    place-items: center;
+}
+
+.homepage h1,
+.event h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.1px;
+    color: #1F1E1E;
+}
+
+.homepage .h1,
+.event .h1{
+    margin-top: -25px;
+}
+
+.homepage p,
+.event p{
+    margin-top: -5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.homepage .p,
+.event .p{
+    margin-top: -10px;
+}
+
+.homepage .join-btn,
+.event .join-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    background: #1C1818;
+    border-radius: 10px;
+    color: #fff;
+}
+/* end of homepage */
+
+/* gallery */
+.gallery{
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.gallery img{
+    width: 270px;
+    height: 350px;
+}
+
+.gallery .gallery-2{
+    margin-top: 100px;
+}
+
+.gallery .gallery-3{
+    margin-top: 30px;
+}
+
+.gallery .gallery-4{
+    margin-top: 150px;
+    width: 300px;
+}
+
+/* our mission */
+.mission{
+    margin: 0 60px;
+}
+
+.mission .mission-1 h1,
+.mission .mission-desc h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: #1F1E1E;
+}
+
+.mission .mission-1 p,
+.mission .mission-desc p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #696868;
+}
+
+.mission .mission-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mission .mission-2 .mission-img{
+    display: block;
+    height: 250px;
+}
+
+.mission .mission-2 .mission-img .image-1{
+    height: 300px;
+    margin-top: 35px;
+}
+
+.mission .mission-2 .mission-img .image-2{
+    height: 170px;
+    position: absolute;
+    margin-left: 10px;
+}
+/* end of mission */
+
+/* events */
+.event-body{
+    margin-top: 70px;
+}
+
+.event h1,
+.event .h1{
+    font-size: 40px;
+}
+
+.event p,
+.event .p{
+    font-size: 16px;
+}
+
+.event-slide{
+    margin-top: -30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.event-slide img{
+    width: 250px;
+}
+
+.event-slide .event-1{
+    height: 365px;
+    margin-top: 25px
+}
+
+.event-slide .event-2{
+    height: 285px;
+    margin-top: 27px;
+}
+
+.event-slide .event-3{
+    height: 315px;
+    margin-top: 72px;
+}
+
+.event-slide .event-4{
+    height: 365px;
+    margin-top: 28px;
+    width: 260px;
+}
+
+.event-slide .event-5{
+    width: 150px;
+}
+
+.event-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 90px;
+}
+
+.event-nav a{
+    color: #BAB9B9;
+    transition: .3s all ease;
+}
+
+.event-nav a:hover{
+    color: #1F1E1E;
+}
+
+.event-nav .nav-num a{
+    margin-right: 5px;
+}
+
+.event-nav .nav-num .active,
+.event-nav .active{
+    color: #1F1E1E;
+}
+
+.event-nav a svg{
+    margin-top: 0px;
+    width: 20px;
+    height: 12px;
+    display: inline-block;
+    margin: auto;
+}
+
+.event-footer{
+    margin-top: 70px;
+}
+/* end of event  */
+
+/* gallery */
+.gallary{
+    margin-top: 90px;
+
+}
+
+.gallary .gallary-img{
+    margin: 0 50px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallary .gallary-img img{
+    width: 275px;
+}
+
+.gallary .gallary-img img:nth-child(even){
+    margin-top: 200px;
+}
+/* end of gallery */
+
+/* crew */
+.crew{
+    margin-top: 90px;
+}
+
+.crew-img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.crew-img img{
+    width: 220px;
+}
+
+.crew-img p{
+    text-align: center;
+}
+
+.crew .event-nav{
+    margin-top: 20px;
+}
+/* end of crew */
+
+/* footer */
+footer{
+    background: #1F1E1E;
+    margin-top: 90px;
+    color: #e6e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .content{
+    display: grid;
+    place-items: center;
+}
+
+footer .content p{
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+footer .content .auth-btn:hover{
+    background-color: #e6e5e5;
+    color: #000;
+}
+
+footer .privacy{
+    margin-top: 50px;
+}
+
+footer .privacy a{
+    color: #e6e5e5;
+    transition: .2s all ease;
+}
+
+footer .privacy a:hover{
+    color: #4200FF;
+}
+/* end of footer */
+
+/* end of all codes any one needed will be in new file */
