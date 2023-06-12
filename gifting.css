@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Poppins:wght@100;300;400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+ul li{
+    list-style: none;
+}
+
+body {
+    background: #3a3939;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.gifting {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding:0 295px;
+    justify-content: center;
+    align-items: center;
+    background: #1F1E1E;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+.intro .text-img{
+    margin-left: -7px;
+    margin-bottom: 10px;
+}
+
+.intro p{
+    margin-bottom: 20px;
+}
+
+.intro .image{
+    height: 330px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.form{
+    width: 500px;
+    background-color: #fff;
+    color: black;
+    padding: 18px;
+
+}
+
+.form h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form form input[type = 'text'],
+.form form input[type = 'date']{
+    margin-bottom: 18px;
+    font-size: 16px;
+    width: 90%;
+    height: 38px;
+    padding:0 5px;
+    padding-top: 9px;
+    display: inline-flex;
+    overflow-x: hidden;
+    border-radius: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: #fcf9f9;
+    color: #1F1E1E;
+    transition: .5s all ease;
+    margin-left: 20px;
+}
+
+.form form input[type = 'text']:hover,
+.form form input[type = 'date']:hover{
+    background: #ebe8e8;
+}
+
+.form form input[type = 'text']:fixed,
+.form form input[type = 'date']:fixed{
+    background: #ebe8e8;
+}
+
+.form form input[type = 'checkbox']{
+    height: 15px;
+    width: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.sub li{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.sub li:before{
+    content: "";
+    display: inline-block;
+    margin: auto;
+    background-color: black;
+    width: 4px;
+    height: 4px;
+    border-radius: 100px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.advert{
+    margin:40px 0;
+}
+
+.notice{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.notice p,
+.notice h4{
+    color: rgb(6, 156, 26);
+    margin-left: 20px;
+}
+
+.total h3{
+    margin-bottom: 20px;
+}
+
+.total .gift-total,
+.total .all-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total .gift-total{
+    margin-bottom: 15px;
+}
+
+.total .gift-total input{
+    height: 30px;
+    width: 80px;
+    padding: 10px;
+}
+
+.total .note{
+    color: rgb(199, 14, 14);
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: -15px;
+}
+
+.total .all-total{
+    margin-top: 13px;
+}
+
+.total .all-total input{
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.btn button{
+    width: 35%;
+    height: 55px;
+    border-radius: 15px;
+    align-self: center;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(25, 66, 177);
+    color: #fff;
+    transition: .3s all ease;
+}
+
+.btn button:hover{
+    color: #1F1E1E;
+    background: #ebe8e8;
+}
